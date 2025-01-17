@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>unnamed blog</title>
+  <subtitle>undefined description</subtitle>
+  <link href="https://example.com/portfolio/feed/feed.xml" rel="self" />
+  <link href="https://example.com/portfolio/" />
+  <updated>2025-01-15T00:00:00Z</updated>
+  <id>https://example.com/portfolio/</id>
+  <author>
+    <name>Joe Mackle</name>
+  </author>
+  <entry>
+    <title>First post</title>
+    <link href="https://example.com/portfolio/blog/firstpost/" />
+    <updated>2025-01-15T00:00:00Z</updated>
+    <id>https://example.com/portfolio/blog/firstpost/</id>
+    <content type="html">&lt;p&gt;the first something of anything tends to be important&lt;/p&gt;
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/portfolio/img/pyofkFZNJD-1565.avif 1565w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/portfolio/img/pyofkFZNJD-1565.webp 1565w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/portfolio/img/pyofkFZNJD-1565.jpeg&quot; alt=&quot;Home&quot; width=&quot;1565&quot; height=&quot;1037&quot;&gt;&lt;/picture&gt;</content>
+  </entry>
+</feed>

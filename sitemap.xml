@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	
+	<url>
+		<loc>https://joemackle.github.io/portfolio/blog/firstpost/</loc>
+		<lastmod>2025-01-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://joemackle.github.io/portfolio/about/</loc>
+		<lastmod>2025-01-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://joemackle.github.io/portfolio/blog/</loc>
+		<lastmod>2025-01-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://joemackle.github.io/portfolio/</loc>
+		<lastmod>2025-01-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://joemackle.github.io/portfolio/tags/</loc>
+		<lastmod>2025-01-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://joemackle.github.io/portfolio/feed/feed.xml</loc>
+		<lastmod>2025-01-17</lastmod>
+	</url>
+</urlset>
