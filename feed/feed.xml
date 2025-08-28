@@ -3,19 +3,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <title>unnamed blog</title>
   <subtitle>undefined description</subtitle>
-  <link href="https://joemackle.github.io/portfolio/feed/feed.xml" rel="self" />
-  <link href="https://joemackle.github.io/portfolio/portfolio/" />
+  <link href="https://joemackle.com/feed/feed.xml" rel="self" />
+  <link href="https://joemackle.com/" />
   <updated>2025-01-15T00:00:00Z</updated>
-  <id>https://joemackle.github.io/portfolio/portfolio/</id>
+  <id>https://joemackle.com/</id>
   <author>
     <name>Joe Mackle</name>
   </author>
   <entry>
     <title>First post</title>
-    <link href="https://joemackle.github.io/portfolio/blog/firstpost/" />
+    <link href="https://joemackle.com/blog/firstpost/" />
     <updated>2025-01-15T00:00:00Z</updated>
-    <id>https://joemackle.github.io/portfolio/blog/firstpost/</id>
+    <id>https://joemackle.com/blog/firstpost/</id>
     <content type="html">&lt;p&gt;the first something of anything tends to be important&lt;/p&gt;
-&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://joemackle.github.io/portfolio/img/pyofkFZNJD-1565.avif 1565w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://joemackle.github.io/portfolio/img/pyofkFZNJD-1565.webp 1565w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://joemackle.github.io/portfolio/img/pyofkFZNJD-1565.jpeg&quot; alt=&quot;Home&quot; width=&quot;1565&quot; height=&quot;1037&quot;&gt;&lt;/picture&gt;</content>
+&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://joemackle.com/img/pyofkFZNJD-1565.avif 1565w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://joemackle.com/img/pyofkFZNJD-1565.webp 1565w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://joemackle.com/img/pyofkFZNJD-1565.jpeg&quot; alt=&quot;Home&quot; width=&quot;1565&quot; height=&quot;1037&quot;&gt;&lt;/picture&gt;</content>
   </entry>
 </feed>
