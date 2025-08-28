@@ -65,7 +65,7 @@ export default async function(eleventyConfig) {
 			language: "en",
 			title: "unnamed blog",
 			subtitle: "undefined description",
-			base: "https://joemackle.github.io/portfolio/",
+			base: "https://joemackle.com/",
 			author: {
 				name: "Joe Mackle"
 			}
