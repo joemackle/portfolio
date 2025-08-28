@@ -1,24 +1,30 @@
 // public/js/theme-toggle.js
 
-// Get the toggle button
-const themeToggle = document.getElementById('theme-toggle');
+(function () {
+	const root = document.documentElement;
 
-// Check for a saved theme preference
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-  document.documentElement.setAttribute('data-theme', savedTheme);
-  themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
-}
+	// apply theme ASAP to avoid FOUC
+	try {
+		const saved = localStorage.getItem('theme');
+		if (saved === 'dark' || saved === 'light') {
+			root.setAttribute('data-theme', saved);
+		}
+	} catch {}
 
-// Add event listener for toggling
-themeToggle.addEventListener('click', () => {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+	// wire up button
+	window.addEventListener('DOMContentLoaded', () => {
+		const btn = document.getElementById('theme-toggle');
+		if (!btn) return;
 
-  // Apply the new theme
-  document.documentElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
+		const current = root.getAttribute('data-theme') || 'light';
+		btn.textContent = current === 'dark' ? '☀️' : '🌙';
 
-  // Update button text/icon
-  themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-});
+		btn.addEventListener('click', () => {
+			const now = root.getAttribute('data-theme') || 'light';
+			const next = now === 'dark' ? 'light' : 'dark';
+			root.setAttribute('data-theme', next);
+			try { localStorage.setItem('theme', next); } catch {}
+			btn.textContent = next === 'dark' ? '☀️' : '🌙';
+		});
+	});
+})();
