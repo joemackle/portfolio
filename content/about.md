@@ -7,4 +7,6 @@ const eleventyNavigation = {
 # About
 
 I am Joe Mackle. This is my blog. Built with Eleventy.
+<br>
+Last build date:
 {% currentBuildDate %}

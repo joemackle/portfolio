@@ -103,7 +103,7 @@ export default async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addShortcode("currentBuildDate", () => {
-		return (new Date()).toISOString();
+		return (new Date()).toDateString();
 	});
 
 	// Features to make your build faster (when you need them)
