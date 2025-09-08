@@ -5,11 +5,58 @@
   <subtitle>undefined description</subtitle>
   <link href="https://joemackle.com/feed/feed.xml" rel="self" />
   <link href="https://joemackle.com/" />
-  <updated>2025-01-15T00:00:00Z</updated>
+  <updated>2025-09-08T00:00:00Z</updated>
   <id>https://joemackle.com/</id>
   <author>
     <name>Joe Mackle</name>
   </author>
+  <entry>
+    <title>Chords</title>
+    <link href="https://joemackle.com/blog/chords/" />
+    <updated>2025-09-08T00:00:00Z</updated>
+    <id>https://joemackle.com/blog/chords/</id>
+    <content type="html">&lt;p&gt;Let me demonstrate some chords for you&lt;/p&gt;
+&lt;svg viewBox=&quot;0 0 140 175&quot; width=&quot;100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; role=&quot;img&quot; aria-label=&quot;C major&quot;&gt;
+			&lt;style&gt;
+				.grid { stroke: #333; stroke-width: 1 }
+				.grid-thick { stroke: #333; stroke-width: 3 }
+				.dot { fill: #333 }
+				.open { fill: none; stroke: #333; stroke-width: 2 }
+				.mute { font: 18px sans-serif; text-anchor: middle }
+				.label { font: 18px sans-serif; text-anchor: middle }
+				.frame { fill: white; stroke: #333; stroke-width: 1 }
+			&lt;/style&gt;
+			&lt;rect class=&quot;frame&quot; x=&quot;0.5&quot; y=&quot;0.5&quot; width=&quot;139&quot; height=&quot;174&quot; rx=&quot;10&quot; ry=&quot;10&quot;&gt;&lt;/rect&gt;
+			&lt;text x=&quot;70&quot; y=&quot;22&quot; class=&quot;label&quot;&gt;C major&lt;/text&gt;
+		&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;45&quot; x2=&quot;20&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;40&quot; y1=&quot;45&quot; x2=&quot;40&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;60&quot; y1=&quot;45&quot; x2=&quot;60&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;80&quot; y1=&quot;45&quot; x2=&quot;80&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;100&quot; y1=&quot;45&quot; x2=&quot;100&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;120&quot; y1=&quot;45&quot; x2=&quot;120&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid-thick&quot; x1=&quot;20&quot; y1=&quot;45&quot; x2=&quot;120&quot; y2=&quot;45&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;69&quot; x2=&quot;120&quot; y2=&quot;69&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;93&quot; x2=&quot;120&quot; y2=&quot;93&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;117&quot; x2=&quot;120&quot; y2=&quot;117&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;141&quot; x2=&quot;120&quot; y2=&quot;141&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;165&quot; x2=&quot;120&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;text class=&quot;mute&quot; x=&quot;20&quot; y=&quot;40&quot;&gt;x&lt;/text&gt;&lt;circle class=&quot;dot&quot; cx=&quot;40&quot; cy=&quot;105&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;dot&quot; cx=&quot;60&quot; cy=&quot;81&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;open&quot; cx=&quot;80&quot; cy=&quot;35&quot; r=&quot;4&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;dot&quot; cx=&quot;100&quot; cy=&quot;57&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;open&quot; cx=&quot;120&quot; cy=&quot;35&quot; r=&quot;4&quot;&gt;&lt;/circle&gt;&lt;/svg&gt;
+&lt;svg viewBox=&quot;0 0 140 175&quot; width=&quot;100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; role=&quot;img&quot; aria-label=&quot;E major 7&quot;&gt;
+			&lt;style&gt;
+				.grid { stroke: #333; stroke-width: 1 }
+				.grid-thick { stroke: #333; stroke-width: 3 }
+				.dot { fill: #333 }
+				.open { fill: none; stroke: #333; stroke-width: 2 }
+				.mute { font: 18px sans-serif; text-anchor: middle }
+				.label { font: 18px sans-serif; text-anchor: middle }
+				.frame { fill: white; stroke: #333; stroke-width: 1 }
+			&lt;/style&gt;
+			&lt;rect class=&quot;frame&quot; x=&quot;0.5&quot; y=&quot;0.5&quot; width=&quot;139&quot; height=&quot;174&quot; rx=&quot;10&quot; ry=&quot;10&quot;&gt;&lt;/rect&gt;
+			&lt;text x=&quot;70&quot; y=&quot;22&quot; class=&quot;label&quot;&gt;E major 7&lt;/text&gt;
+		&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;45&quot; x2=&quot;20&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;40&quot; y1=&quot;45&quot; x2=&quot;40&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;60&quot; y1=&quot;45&quot; x2=&quot;60&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;80&quot; y1=&quot;45&quot; x2=&quot;80&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;100&quot; y1=&quot;45&quot; x2=&quot;100&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;120&quot; y1=&quot;45&quot; x2=&quot;120&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;45&quot; x2=&quot;120&quot; y2=&quot;45&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;69&quot; x2=&quot;120&quot; y2=&quot;69&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;93&quot; x2=&quot;120&quot; y2=&quot;93&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;117&quot; x2=&quot;120&quot; y2=&quot;117&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;141&quot; x2=&quot;120&quot; y2=&quot;141&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;165&quot; x2=&quot;120&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;text x=&quot;126&quot; y=&quot;62&quot;&gt;6&lt;/text&gt;&lt;circle class=&quot;open&quot; cx=&quot;20&quot; cy=&quot;35&quot; r=&quot;4&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;dot&quot; cx=&quot;40&quot; cy=&quot;81&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;dot&quot; cx=&quot;60&quot; cy=&quot;57&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;dot&quot; cx=&quot;80&quot; cy=&quot;105&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;open&quot; cx=&quot;100&quot; cy=&quot;35&quot; r=&quot;4&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;open&quot; cx=&quot;120&quot; cy=&quot;35&quot; r=&quot;4&quot;&gt;&lt;/circle&gt;&lt;/svg&gt;
+&lt;svg viewBox=&quot;0 0 140 175&quot; width=&quot;100&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; role=&quot;img&quot; aria-label=&quot;E minor 7&quot;&gt;
+			&lt;style&gt;
+				.grid { stroke: #333; stroke-width: 1 }
+				.grid-thick { stroke: #333; stroke-width: 3 }
+				.dot { fill: #333 }
+				.open { fill: none; stroke: #333; stroke-width: 2 }
+				.mute { font: 18px sans-serif; text-anchor: middle }
+				.label { font: 18px sans-serif; text-anchor: middle }
+				.frame { fill: white; stroke: #333; stroke-width: 1 }
+			&lt;/style&gt;
+			&lt;rect class=&quot;frame&quot; x=&quot;0.5&quot; y=&quot;0.5&quot; width=&quot;139&quot; height=&quot;174&quot; rx=&quot;10&quot; ry=&quot;10&quot;&gt;&lt;/rect&gt;
+			&lt;text x=&quot;70&quot; y=&quot;22&quot; class=&quot;label&quot;&gt;E minor 7&lt;/text&gt;
+		&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;45&quot; x2=&quot;20&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;40&quot; y1=&quot;45&quot; x2=&quot;40&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;60&quot; y1=&quot;45&quot; x2=&quot;60&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;80&quot; y1=&quot;45&quot; x2=&quot;80&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;100&quot; y1=&quot;45&quot; x2=&quot;100&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;120&quot; y1=&quot;45&quot; x2=&quot;120&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;45&quot; x2=&quot;120&quot; y2=&quot;45&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;69&quot; x2=&quot;120&quot; y2=&quot;69&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;93&quot; x2=&quot;120&quot; y2=&quot;93&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;117&quot; x2=&quot;120&quot; y2=&quot;117&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;141&quot; x2=&quot;120&quot; y2=&quot;141&quot;&gt;&lt;/line&gt;&lt;line class=&quot;grid&quot; x1=&quot;20&quot; y1=&quot;165&quot; x2=&quot;120&quot; y2=&quot;165&quot;&gt;&lt;/line&gt;&lt;text x=&quot;126&quot; y=&quot;62&quot;&gt;3&lt;/text&gt;&lt;circle class=&quot;open&quot; cx=&quot;20&quot; cy=&quot;35&quot; r=&quot;4&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;dot&quot; cx=&quot;40&quot; cy=&quot;153&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;dot&quot; cx=&quot;60&quot; cy=&quot;105&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;dot&quot; cx=&quot;80&quot; cy=&quot;81&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;dot&quot; cx=&quot;100&quot; cy=&quot;57&quot; r=&quot;6&quot;&gt;&lt;/circle&gt;&lt;circle class=&quot;open&quot; cx=&quot;120&quot; cy=&quot;35&quot; r=&quot;4&quot;&gt;&lt;/circle&gt;&lt;/svg&gt;
+</content>
+  </entry>
   <entry>
     <title>First post</title>
     <link href="https://joemackle.com/blog/firstpost/" />
