@@ -1,0 +1,15 @@
+id: emaj7-open
+name: E major 7
+aliases: [Emaj7, EM7]
+tuning: [E2, A2, D3, G3, B3, E4]
+capo: 0
+fingering:
+  frets:   [0, 7, 6, 8, 0, 0]
+  fingers: [x, 2, 1, 3, x, x]
+  barre: null
+notes:     [E, E, G#, D#, B, E]
+intervals: [1, 1,  3,  7, 5, 1]
+position: 6
+meta:
+  difficulty: easy
+  style: open

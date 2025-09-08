@@ -3,11 +3,14 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import yaml from "js-yaml";
 
 import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function(eleventyConfig) {
+	eleventyConfig.addDataExtension("yml,yaml", (contents) => yaml.load(contents));
+
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
@@ -102,8 +105,68 @@ export default async function(eleventyConfig) {
 		// selector: "h1,h2,h3,h4,h5,h6", // default
 	});
 
+	// Shortcodes
+
 	eleventyConfig.addShortcode("currentBuildDate", () => {
 		return (new Date()).toDateString();
+	});
+
+	// Chords
+	eleventyConfig.addShortcode("chord", function(chordId) {
+		const chord = this.ctx.chords?.[chordId];
+		if (!chord) return `<em>Chord not found: ${chordId}</em>`;
+
+		const frets = chord.fingering.frets;
+
+		const VB_W = 140, VB_H = 175;
+		const INSET = 0.5;
+		const R = 10;
+
+		let svg = `<svg viewBox="0 0 ${VB_W} ${VB_H}" width="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${chord.name}">
+			<style>
+				.grid { stroke: #333; stroke-width: 1 }
+				.grid-thick { stroke: #333; stroke-width: 3 }
+				.dot { fill: #333 }
+				.open { fill: none; stroke: #333; stroke-width: 2 }
+				.mute { font: 18px sans-serif; text-anchor: middle }
+				.label { font: 18px sans-serif; text-anchor: middle }
+				.frame { fill: white; stroke: #333; stroke-width: 1 }
+			</style>
+			<rect class="frame" x="${INSET}" y="${INSET}" width="${VB_W - 2*INSET}" height="${VB_H - 2*INSET}" rx="${R}" ry="${R}" />
+			<text x="${VB_W/2}" y="22" class="label">${chord.name}</text>
+		`;
+
+		// draw strings
+		for (let i = 0; i < 6; i++) {
+			const x = 20 + i * 20;
+			svg += `<line class="grid" x1="${x}" y1="45" x2="${x}" y2="165" />`;
+		}
+
+		// draw frets
+		for (let i = 0; i < 6; i++) {
+			const y = 45 + i * 24;
+			svg += `<line class="${i === 0 && chord.position === 1 ? "grid-thick" : "grid"}" x1="20" y1="${y}" x2="120" y2="${y}" />`;
+		}
+
+		if (chord.position !== 1) {
+			svg += `<text x="126" y="62">${chord.position}</text>`;
+		}
+
+		// draw dots
+		frets.forEach((f, i) => {
+			const x = 20 + i * 20;
+			if (f === "x") {  // mute
+				svg += `<text class="mute" x="${x}" y="40">x</text>`;
+			} else if (f === 0) {  // open
+				svg += `<circle class="open" cx="${x}" cy="35" r="4" />`;
+			} else if (typeof f === "number") {  // pressed
+				const y = 45 + (f-chord.position+0.5) * 24;
+				svg += `<circle class="dot" cx="${x}" cy="${y}" r="6" />`;
+			}
+		});
+
+		svg += "</svg>";
+		return svg;
 	});
 
 	// Features to make your build faster (when you need them)

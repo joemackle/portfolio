@@ -1,0 +1,15 @@
+id: c-open
+name: C major
+aliases: [C, Cmaj]
+tuning: [E2, A2, D3, G3, B3, E4]     # standard; lowest -> highest
+capo: 0
+fingering:                           # from lowest string (6) to highest (1)
+  frets:   [x, 3, 2, 0, 1, 0]        # x = muted, 0 = open
+  fingers: [x, 3, 2, x, 1, x]        # optional; 1=index, 2=middle, etc.
+  barre: null                        # or { fret: 1, from: 5, to: 1 }
+notes:     [x, C, E, G, C, E]
+intervals: [x, 1, 3, 5, 1, 3]        # chord intervals
+position: 1                          # diagram starting fret position (for higher voicings)
+meta:
+  difficulty: easy
+  style: general
