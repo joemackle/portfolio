@@ -1,6 +1,6 @@
-id: em7-open
-name: E minor 7
-aliases: [Em7, Emin7]
+id: em7-stretch
+name: Em7
+aliases: [E minor 7, Emin7, E-7]
 tuning: [E2, A2, D3, G3, B3, E4]
 capo: 0
 fingering:

@@ -1,6 +1,6 @@
 id: c-open
-name: C major
-aliases: [C, Cmaj]
+name: C
+aliases: [C major, Cmaj]
 tuning: [E2, A2, D3, G3, B3, E4]     # standard; lowest -> highest
 capo: 0
 fingering:                           # from lowest string (6) to highest (1)

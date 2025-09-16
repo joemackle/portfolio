@@ -10,3 +10,5 @@ Let me demonstrate some chords for you
 {% chord "c-open" %}
 {% chord "emaj7-open" %}
 {% chord "em7-stretch" %}
+{% chord "e6" %}
+{% chord "a6-5f" %}

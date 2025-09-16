@@ -118,7 +118,7 @@ export default async function(eleventyConfig) {
 
 		const frets = chord.fingering.frets;
 
-		const VB_W = 140, VB_H = 175;
+		const VB_W = 160, VB_H = 200;
 		const INSET = 0.5;
 		const R = 10;
 
@@ -129,38 +129,39 @@ export default async function(eleventyConfig) {
 				.dot { fill: #333 }
 				.open { fill: none; stroke: #333; stroke-width: 2 }
 				.mute { font: 18px sans-serif; text-anchor: middle }
-				.label { font: 18px sans-serif; text-anchor: middle }
+				.label { font: 20px sans-serif; text-anchor: middle }
 				.frame { fill: white; stroke: #333; stroke-width: 1 }
 			</style>
 			<rect class="frame" x="${INSET}" y="${INSET}" width="${VB_W - 2*INSET}" height="${VB_H - 2*INSET}" rx="${R}" ry="${R}" />
-			<text x="${VB_W/2}" y="22" class="label">${chord.name}</text>
+			<text x="${VB_W/2}" y="30" class="label">${chord.name}</text>
 		`;
 
 		// draw strings
 		for (let i = 0; i < 6; i++) {
-			const x = 20 + i * 20;
-			svg += `<line class="grid" x1="${x}" y1="45" x2="${x}" y2="165" />`;
+			const x = 30 + i * 20;
+			svg += `<line class="grid" x1="${x}" y1="60" x2="${x}" y2="180" />`;
 		}
 
 		// draw frets
 		for (let i = 0; i < 6; i++) {
-			const y = 45 + i * 24;
-			svg += `<line class="${i === 0 && chord.position === 1 ? "grid-thick" : "grid"}" x1="20" y1="${y}" x2="120" y2="${y}" />`;
+			const y = 60 + i * 24;
+			svg += `<line class="${i === 0 && chord.position === 1 ? "grid-thick" : "grid"}" x1="30" y1="${y}" x2="130" y2="${y}" />`;
 		}
 
+		// fret number
 		if (chord.position !== 1) {
-			svg += `<text x="126" y="62">${chord.position}</text>`;
+			svg += `<text x="140" y="76">${chord.position}</text>`;
 		}
 
 		// draw dots
 		frets.forEach((f, i) => {
-			const x = 20 + i * 20;
+			const x = 30 + i * 20;
 			if (f === "x") {  // mute
-				svg += `<text class="mute" x="${x}" y="40">x</text>`;
+				svg += `<text class="mute" x="${x}" y="55">x</text>`;
 			} else if (f === 0) {  // open
-				svg += `<circle class="open" cx="${x}" cy="35" r="4" />`;
+				svg += `<circle class="open" cx="${x}" cy="50" r="4" />`;
 			} else if (typeof f === "number") {  // pressed
-				const y = 45 + (f-chord.position+0.5) * 24;
+				const y = 60 + (f-chord.position+0.5) * 24;
 				svg += `<circle class="dot" cx="${x}" cy="${y}" r="6" />`;
 			}
 		});

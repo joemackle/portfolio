@@ -1,0 +1,15 @@
+id: e6
+name: E6
+aliases: [E major 6, Emaj6]
+tuning: [E2, A2, D3, G3, B3, E4]
+capo: 0
+fingering:
+  frets:   [0, 2, x, 1, 2, 0]
+  fingers: [x, 3, x, 2, 4, x]
+  barre: null
+notes:     [E, B, x, G#, C#, E]
+intervals: [1, 5, x,  3,  6, 1]
+position: 1
+meta:
+  difficulty: medium
+  style: open
