@@ -1,8 +1,8 @@
 export default {
-	title: "joe mackle's blog",
+	title: "joe mackle's site",
 	url: "https://joemackle.com/",
 	language: "en",
-	description: "a blog about everything joe mackle",
+	description: "projects, blog posts, and experiments in creative software engineering.",
 	author: {
 		name: "Joe Mackle",
 		email: "jmackle@ufl.edu",

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ metadata.language }}">
 	<head>
+		{% block head %}
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
@@ -38,13 +39,14 @@
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		{%- js %}{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}{% endjs %}
+		{% endblock %}
 	</head>
 	<body>
 		<div class="background-container"></div>
 		<div class="content-container">
 			<a href="#skip" class="visually-hidden">Skip to main content</a>
 
-			<header>
+			<header class="site-header">
 				<a href="/" class="home-link">{{ metadata.title }}</a>
 
 				{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
@@ -63,12 +65,12 @@
 
 			<main id="skip">
 				<heading-anchors>
-					{{ content | safe }}
+					{% block content %}{{ content | safe }}{% endblock %}
 				</heading-anchors>
 			</main>
 
 			<footer>
-				<p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
+{#				<p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>#}
 			</footer>
 
 			<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->

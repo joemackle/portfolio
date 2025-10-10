@@ -128,10 +128,10 @@ main :first-child {
 	margin-top: 0;
 }
 
-header {
+.site-header {
 	border-bottom: 2px dashed var(--text-color);
 }
-header:after {
+.site-header:after {
 	content: "";
 	display: table;
 	clear: both;

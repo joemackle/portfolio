@@ -1,0 +1,40 @@
+{% extends "layouts/base.njk" %}
+{%- css %}{% include "public/css/project-card.css" %}{% endcss %}
+
+{% block head %}
+	<title>{{ title }} | Joe Mackle Portfolio</title>
+	<meta name="description" content="{{ description | safe }}" />
+	<link rel="canonical" href="{{ metadata.url }}{{ page.url }}" />
+	<base href="/" />
+
+	{# open graph (facebook, discord, linkedin) #}
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="{{ title | safe }}" />
+	<meta property="og:description" content="{{ description | safe }}" />
+	<meta property="og:url" content="{{ metadata.url }}{{ page.url }}" />
+	<meta property="og:image" content="{{ metadata.url }}{{ image or '/img/default-og.jpg' }}" />
+	<meta property="og:site_name" content="Joe Mackle Portfolio" />
+
+	{# twitter card #}
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="{{ title | safe }}" />
+	<meta name="twitter:description" content="{{ description | safe }}" />
+	<meta name="twitter:image" content="{{ metadata.url }}{{ image or '/img/default-og.jpg' }}" />
+
+	{{ super() }}
+{% endblock %}
+
+{% block content %}
+	<article class="project-detail">
+		<header class="project-header">
+			<h1>{{ title }}</h1>
+			<p class="project-subtitle">{{ description }}</p>
+		</header>
+
+		<img src="/..{{ image | url }}" alt="{{ title }}" class="project-hero">
+
+		<div class="project-body">
+			{{ content | safe }}
+		</div>
+	</article>
+{% endblock %}

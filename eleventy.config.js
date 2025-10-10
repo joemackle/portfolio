@@ -170,6 +170,10 @@ export default async function(eleventyConfig) {
 		return svg;
 	});
 
+	eleventyConfig.addCollection("projects", function (collection) {
+		return collection.getFilteredByGlob("content/projects/*.md");
+	});
+
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line
