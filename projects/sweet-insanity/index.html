@@ -2,17 +2,111 @@
 <html lang="en">
 	<head>
 		
+	<title>Sweet Insanity | Joe Mackle Portfolio</title>
+	<meta name="description" content="A fast-paced ice cream shop simulation game about managing chaos during rush hour.">
+	<link rel="canonical" href="https://joemackle.com//projects/sweet-insanity/">
+	<base href="/">
+
+	
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Sweet Insanity">
+	<meta property="og:description" content="A fast-paced ice cream shop simulation game about managing chaos during rush hour.">
+	<meta property="og:url" content="https://joemackle.com//projects/sweet-insanity/">
+	<meta property="og:image" content="https://joemackle.com//img/projects/scenic-route.jpg">
+	<meta property="og:site_name" content="Joe Mackle Portfolio">
+
+	
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Sweet Insanity">
+	<meta name="twitter:description" content="A fast-paced ice cream shop simulation game about managing chaos during rush hour.">
+	<meta name="twitter:image" content="https://joemackle.com//img/projects/scenic-route.jpg">
+
+	
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>joe mackle&#39;s site</title>
-		<meta name="description" content="projects, blog posts, and experiments in creative software engineering.">
+		<title>Sweet Insanity</title>
+		<meta name="description" content="A fast-paced ice cream shop simulation game about managing chaos during rush hour.">
 		<link rel="preload" as="image" href="/img/bg-light.jpg">
 		<link rel="preload" as="image" href="/img/bg-dark.jpg">
 		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="joe mackle&#39;s site">
 		<script src="/js/theme-toggle.js" defer=""></script>
 		<meta name="generator" content="Eleventy v3.1.2">
 		
-		<style>.postlist { counter-reset: start-from 3 }
+		<style>/* Project Cards */
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+	margin: 1.5rem 0;
+	max-width: 34em;
+}
+
+.project-card {
+	position: relative;
+	display: block;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	aspect-ratio: 4 / 3;
+	background-size: cover;
+	background-position: center;
+	text-decoration: none;
+	color: inherit;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.project-card::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.25);
+	transition: background 0.2s ease;
+	z-index: 0;
+}
+
+.project-card:hover::before {
+	background: rgba(0, 0, 0, 0.35);
+}
+
+.project-overlay {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0.5rem 0.75rem;
+	backdrop-filter: blur(2px) brightness(1);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+	color: white;
+	z-index: 1;
+	transition: backdrop-filter 0.3s ease;
+}
+
+.project-overlay h2 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+.project-overlay p {
+	margin: 0.25rem 0 0;
+	font-size: 0.8rem;
+	opacity: 0.9;
+}
+
+:root[data-theme="light"] .project-card::before {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+:root[data-theme="light"] .project-card:hover::before {
+	background: rgba(255, 255, 255, 0.35);
+}
+
+:root[data-theme="light"] .project-overlay {
+	background: linear-gradient(to top, rgba(255, 255, 255, 0.75), transparent);
+	color: #000;
+}
 /* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
@@ -332,6 +426,7 @@ header {
 	position: relative;
 }</style>
 		
+
 	</head>
 	<body>
 		<div class="background-container"></div>
@@ -345,7 +440,7 @@ header {
 					<ul class="nav">
 						<li class="nav-item"><a href="https://github.com/joemackle">GitHub</a></li>
 						<li class="nav-item"><a href="/">Home</a></li>
-						<li class="nav-item"><a href="/blog/" aria-current="page">Blog</a></li>
+						<li class="nav-item"><a href="/blog/">Blog</a></li>
 						<li class="nav-item"><a href="/about/">About</a></li>
 						<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
 					</ul>
@@ -357,22 +452,19 @@ header {
 			<main id="skip">
 				<heading-anchors>
 					
-<h1 id="blog-archive">blog archive</h1>
+	<article class="project-detail">
+		<header class="project-header">
+			<h1 id="sweet-insanity">Sweet Insanity</h1>
+			<p class="project-subtitle">A fast-paced ice cream shop simulation game about managing chaos during rush hour.</p>
+		</header>
 
+		<img src="img/projects/scenic-route.jpg" alt="Sweet Insanity" class="project-hero">
 
+		<div class="project-body">
+			<p>Hello yes this is about my game Sweet Insanity.</p>
 
-<ol reversed="" class="postlist">
-	<li class="postlist-item">
-		<a href="/blog/chords/" class="postlist-link">Chords</a>
-		<time class="postlist-date" datetime="2025-09-08">September 2025</time>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/firstpost/" class="postlist-link">First post</a>
-		<time class="postlist-date" datetime="2025-01-15">January 2025</time>
-	</li>
-</ol>
-
-
+		</div>
+	</article>
 
 				</heading-anchors>
 			</main>
@@ -381,7 +473,7 @@ header {
 
 			</footer>
 
-			<!-- This page `/blog/` was built on Mon Oct 13 2025 -->
+			<!-- This page `/projects/sweet-insanity/` was built on Mon Oct 13 2025 -->
 			<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 		</div>
 	</body>

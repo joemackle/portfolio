@@ -1,35 +1,93 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>joe mackle&#39;s blog</title>
-		<meta name="description" content="a blog about everything joe mackle">
+		<title>joe mackle&#39;s site</title>
+		<meta name="description" content="projects, blog posts, and experiments in creative software engineering.">
 		<link rel="preload" as="image" href="/img/bg-light.jpg">
 		<link rel="preload" as="image" href="/img/bg-dark.jpg">
-		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="joe mackle&#39;s blog">
+		<link rel="alternate" href="feed/feed.xml" type="application/atom+xml" title="joe mackle&#39;s site">
 		<script src="/js/theme-toggle.js" defer=""></script>
 		<meta name="generator" content="Eleventy v3.1.2">
 		
-		<style>.postlist { counter-reset: start-from 3 }
-/* Message Box */
-.message-box {
-	--color-message-box: #ffc;
+		<style>/* Project Cards */
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+	margin: 1.5rem 0;
+	max-width: 34em;
+}
 
+.project-card {
+	position: relative;
 	display: block;
-	background-color: var(--color-message-box);
-	color: var(--color-gray-90);
-	padding: 1em 0.625em; /* 16px 10px /16 */
-}
-.message-box ol {
-	margin-top: 0;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	aspect-ratio: 4 / 3;
+	background-size: cover;
+	background-position: center;
+	text-decoration: none;
+	color: inherit;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-	.message-box {
-		--color-message-box: #082840;
-	}
+.project-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
+
+.project-card::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.25);
+	transition: background 0.2s ease;
+	z-index: 0;
+}
+
+.project-card:hover::before {
+	background: rgba(0, 0, 0, 0.35);
+}
+
+.project-overlay {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0.5rem 0.75rem;
+	backdrop-filter: blur(2px) brightness(1);
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+	color: white;
+	z-index: 1;
+	transition: backdrop-filter 0.3s ease;
+}
+
+.project-overlay h2 {
+	margin: 0;
+	font-size: 1rem;
+}
+
+.project-overlay p {
+	margin: 0.25rem 0 0;
+	font-size: 0.8rem;
+	opacity: 0.9;
+}
+
+:root[data-theme="light"] .project-card::before {
+	background: rgba(255, 255, 255, 0.25);
+}
+
+:root[data-theme="light"] .project-card:hover::before {
+	background: rgba(255, 255, 255, 0.35);
+}
+
+:root[data-theme="light"] .project-overlay {
+	background: linear-gradient(to top, rgba(255, 255, 255, 0.75), transparent);
+	color: #000;
+}
+.postlist { counter-reset: start-from 3 }
 /* This is an arbitrary CSS string added to the bundle */
 /* Defaults */
 :root {
@@ -161,10 +219,10 @@ main :first-child {
 	margin-top: 0;
 }
 
-header {
+.site-header {
 	border-bottom: 2px dashed var(--text-color);
 }
-header:after {
+.site-header:after {
 	content: "";
 	display: table;
 	clear: both;
@@ -348,14 +406,15 @@ header {
 	z-index: 1;
 	position: relative;
 }</style>
+		
 	</head>
 	<body>
 		<div class="background-container"></div>
 		<div class="content-container">
 			<a href="#skip" class="visually-hidden">Skip to main content</a>
 
-			<header>
-				<a href="/" class="home-link">joe mackle&#39;s blog</a>
+			<header class="site-header">
+				<a href="/" class="home-link">joe mackle&#39;s site</a>
 				<nav>
 					<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 					<ul class="nav">
@@ -372,20 +431,41 @@ header {
 
 			<main id="skip">
 				<heading-anchors>
-					<!-- Delete this block, which will also remove the component CSS from the bundle
-<div class="message-box">
-	<ol>
-		<li>Edit <code>_data/metadata.js</code> with your blog’s information.</li>
-		<li>(Optional) Edit <code>eleventy.config.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
-		<li>Delete this message from <code>_includes/layouts/home.njk</code>.</li>
-	</ol>
-	<p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
+					
+
+Hi, I'm Joe Mackle, a software developer and student at the University of Florida studying Computer Science.
+
+
+<h1 id="projects">projects</h1>
+<div class="projects-grid">
+	
+		<a href="/projects/sweet-insanity/" class="project-card" style="background-image: url('/img/projects/scenic-route.jpg')">
+			<div class="project-overlay">
+				<h2 id="sweet-insanity">Sweet Insanity</h2>
+				<p>A fast-paced ice cream shop simulation game about managing chaos during rush hour.</p>
+			</div>
+		</a>
+	
+		<a href="/projects/the-mixtape-engine/" class="project-card" style="background-image: url('/img/projects/scenic-route.jpg')">
+			<div class="project-overlay">
+				<h2 id="the-mixtape-engine">The Mixtape Engine</h2>
+				<p>a web app that considers user inputs such as danceability, instrumentalness, and speed, and manufactures a playlist based on them</p>
+			</div>
+		</a>
+	
+		<a href="/projects/the-scenic-route/" class="project-card" style="background-image: url('/img/projects/scenic-route.jpg')">
+			<div class="project-overlay">
+				<h2 id="the-scenic-route">The Scenic Route</h2>
+				<p>A scenic routing web app using SvelteKit, MapLibre GL, and Drizzle ORM.</p>
+			</div>
+		</a>
+	
 </div>
--->
 
 
 
-<h1 id="latest-2-posts">Latest 2 Posts</h1>
+
+<h1 id="latest-blog-posts">latest blog posts</h1>
 
 
 
@@ -413,11 +493,11 @@ header {
 			</main>
 
 			<footer>
-				<p><em>Built with <a href="https://www.11ty.dev/">Eleventy v3.1.2</a></em></p>
+
 			</footer>
 
-			<!-- This page `/` was built on Tue Sep 16 2025 -->
-			<script type="module" src="/dist/xbxy_EL6cU.js"></script>
+			<!-- This page `/` was built on Mon Oct 13 2025 -->
+			<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 		</div>
 	</body>
 </html>

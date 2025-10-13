@@ -1,0 +1,15 @@
+.project-detail {
+	margin: 2rem 0;
+}
+
+.project-hero {
+	width: 100%;
+	border-radius: 0.5rem;
+	margin: 1.5rem 0;
+}
+
+.project-subtitle {
+	font-size: 1.1rem;
+	color: var(--color-gray-50);
+	margin-top: 0.25rem;
+}
