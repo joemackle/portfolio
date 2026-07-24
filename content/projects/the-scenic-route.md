@@ -1,7 +1,8 @@
 ---
 title: "The Scenic Route"
+order: 1
 description: "A scenic routing web app using SvelteKit, MapLibre GL, and Drizzle ORM."
-image: "/img/projects/scenic-route.jpg"
+image: "/img/projects/scenic-route.png"
 layout: "layouts/project.njk"
 ---
 

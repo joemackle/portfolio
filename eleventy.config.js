@@ -171,7 +171,9 @@ export default async function(eleventyConfig) {
 	});
 
 	eleventyConfig.addCollection("projects", function (collection) {
-		return collection.getFilteredByGlob("content/projects/*.md");
+		return collection
+			.getFilteredByGlob("content/projects/*.md")
+			.sort((a, b) => (a.data.order || 999) - (b.data.order || 999));
 	});
 
 	// Features to make your build faster (when you need them)
